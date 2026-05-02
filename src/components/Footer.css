@@ -73,11 +73,27 @@
   gap: 1.5rem;
 }
 
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
 .footer-social a {
-  font-size: 0.8rem;
   color: var(--muted);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+}
+
+.footer-social a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(200,169,110,0.1);
 }
 
 .footer-social a:hover {
